@@ -14,6 +14,7 @@ export default function App() {
         <Route path="product" element={<Product />} />
         <Route path="pricing" element={<Pricing />} />
         <Route path="app" element={<AppLayout />}>
+          <Route index element={<p>City list</p>} />
           <Route path="cities" element={<p>fuck ur city</p>} />
           <Route path="countries" element={<p>fuck ur country</p>} />
           <Route path="form" element={<p>form</p>} />
