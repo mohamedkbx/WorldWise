@@ -13,7 +13,11 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="product" element={<Product />} />
         <Route path="pricing" element={<Pricing />} />
-        <Route path="app" element={<AppLayout />} />
+        <Route path="app" element={<AppLayout />}>
+          <Route path="cities" element={<p>fuck ur city</p>} />
+          <Route path="countries" element={<p>fuck ur country</p>} />
+          <Route path="form" element={<p>form</p>} />
+        </Route>
         <Route path="*" element={<PageNotFound />} />
         <Route path="login" element={<Login />} />
       </Routes>
