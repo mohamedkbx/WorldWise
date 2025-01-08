@@ -9,7 +9,3 @@
 .nav :global(.active) {
   background-color: white;
 }
-
-:global(.test) {
-  color: red;
-}
