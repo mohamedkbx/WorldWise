@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./Login.module.css";
 
 export default function Login() {
@@ -10,12 +11,7 @@ export default function Login() {
       <form className={styles.form}>
         <div className={styles.row}>
           <label htmlFor="email">Email address</label>
-          <input
-            type="email"
-            id="email"
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-          />
+          <input type="email" id="email" onChange={(e) => setEmail(e.target.value)} value={email} />
         </div>
 
         <div className={styles.row}>
