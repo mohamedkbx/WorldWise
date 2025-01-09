@@ -10,6 +10,7 @@ WorldWise is a project aimed at providing users with comprehensive information a
 - Interactive maps
 - Search functionality
 - Responsive design
+- React Router for seamless navigation between different pages
 
 ## Installation
 
