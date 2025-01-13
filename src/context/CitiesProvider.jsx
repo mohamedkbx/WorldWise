@@ -5,6 +5,8 @@ const CitiesContext = createContext();
 function CitiesProvider({children}) {
     const [cities, setCities] = useState([]);
   const [isloading, setIsLoading] = useState(false);
+  const [currentCity,setCurrentCity]= useState({});
+
 
   useEffect(() => {
     async function fetchCities() {
@@ -22,7 +24,7 @@ function CitiesProvider({children}) {
     fetchCities();
   }, []);
   return (
-    <CitiesContext.Provider value={{ cities, isloading }}>
+    <CitiesContext.Provider value={{ cities, isloading, currentCity }}>
         {children}
     </CitiesContext.Provider>
   )

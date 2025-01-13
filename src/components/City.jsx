@@ -1,5 +1,6 @@
 // import styles from "./City.module.css";
 
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 
 const formatDate = (date) =>
@@ -12,8 +13,11 @@ const formatDate = (date) =>
 
 function City() {
   const { id } = useParams();
+  // const[currentCity] = useCities().filter((city) => city.id === id);
+  
+
   // TEMP DATA
-  const currentCity = {
+  const currentCity = { 
     cityName: "Lisbon",
     emoji: "🇵🇹",
     date: "2027-10-31T15:59:59.138Z",
