@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import styles from "./Cityitem.module.css";
 import { useCities } from "../context/CitiesProvider";
 
+
+
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
     day: "numeric",
