@@ -13,7 +13,6 @@ export default function Map() {
 
   const { cities } = useCities();
 
-  // const navigate = useNavigate();
    useEffect(()=>{
     if(mapLat && mapLng)
     setMapPosition([mapLat , mapLng ])
@@ -62,10 +61,10 @@ function ChangeCenter({ position }) {
 }
 
 function DetectClick(){
+    const navigate = useNavigate();
+
   useMapEvent({
-    click:(e)=>{
-      console.log("map clicked")
-    }
+    click:(e)=>  navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`)
   })
 return null
 
