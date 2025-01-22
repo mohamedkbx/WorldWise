@@ -8,6 +8,9 @@ import Spinner from "./Spinner";
 import Button from "./Button";
 import BackButton from "./BackButton";
 import { useUrlPosition } from "../hooks/useUrlPosition";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
@@ -32,14 +35,18 @@ function Form() {
   const [isLoadingGeocoding, setIsLoadingGeocoding] = useState(false);
 
   useEffect(() => {
+    if (!lat && !lng) return;
     async function fetchCityData() {
       try {
         setIsLoadingGeocoding(true);
         setGeocodingError("");
         const res = await fetch(`${BASE_URL}?latitude=${lat}&longitude=${lng}`);
         const data = await res.json();
-        console.log(data)
-        if(!data.countryCode) throw new Error("That doesn't seem to be a city Click somewhere else");
+        console.log(data);
+        if (!data.countryCode)
+          throw new Error(
+            "That doesn't seem to be a city Click somewhere else"
+          );
         setCityName(data.city || data.locality || "");
         setCountry(data.countryName || "");
         setEmoji(data.countryCode);
@@ -50,13 +57,18 @@ function Form() {
       }
     }
     fetchCityData();
-  }, [lat,lng]);
+  }, [lat, lng]);
 
-    if(isLoadingGeocoding) return <Spinner/>
-  if (geoCodingError) return <Message message={geoCodingError}/>
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
+
+  if (!lat && !lng) return <Message message="Start Clicking on the map" />;
+  if (isLoadingGeocoding) return <Spinner />;
+  if (geoCodingError) return <Message message={geoCodingError} />;
 
   return (
-    <form className={styles.form}>
+    <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.row}>
         <label htmlFor="cityName">City name</label>
         <input
@@ -69,11 +81,12 @@ function Form() {
 
       <div className={styles.row}>
         <label htmlFor="date">When did you go to {cityName}?</label>
-        <input
+        {/* <input
           id="date"
           onChange={(e) => setDate(e.target.value)}
           value={date}
-        />
+        /> */}
+        <DatePicker selected={date} onChange={(date) => setDate(date)} />
       </div>
 
       <div className={styles.row}>
