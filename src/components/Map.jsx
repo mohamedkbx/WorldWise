@@ -14,6 +14,14 @@ import { useGeolocation } from "../hooks/useGeoLocation";
 import Button from "./Button";
 import { useUrlPosition } from "../hooks/useUrlPosition";
 
+function convertToEmoji(countryCode) {
+  const codePoints = countryCode
+    .toUpperCase()
+    .split("")
+    .map((char) => 127397 + char.charCodeAt());
+  return String.fromCodePoint(...codePoints);
+}
+
 export default function Map() {
   const [mapPostion, setMapPosition] = useState([29.9537564, 31.5370003]);
   const { cities } = useCities();
@@ -53,7 +61,7 @@ export default function Map() {
             key={city.id}
           >
             <Popup>
-              <span>{city.emoji}</span>
+              <span>{convertToEmoji(city.emoji)}</span>
               <span> </span>
               <span>{city.cityName}</span>
             </Popup>
