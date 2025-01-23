@@ -61,7 +61,7 @@ export default function Map() {
             key={city.id}
           >
             <Popup>
-              <span>{convertToEmoji(city.emoji)}</span>
+              <span>{city.emoji}</span>
               <span> </span>
               <span>{city.cityName}</span>
             </Popup>

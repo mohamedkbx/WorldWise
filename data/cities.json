@@ -1,16 +1,52 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
+      "id": "4b0e",
+      "cityName": "Quwaysina",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2025-01-23T09:18:20.996Z",
+      "notes": "",
       "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": "73930385"
+        "lat": "30.552800413453546",
+        "lng": "31.168212890625004"
+      }
+    },
+    {
+      "id": "2126",
+      "cityName": "Cairo",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2025-01-23T12:15:55.485Z",
+      "notes": "fdsfsf",
+      "position": {
+        "lat": "29.937801557160792",
+        "lng": "31.359299236444713"
+      }
+    },
+    {
+      "id": "f994",
+      "cityName": "Markaz al Waḩat ad Dakhilah",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2025-01-23T12:16:17.125Z",
+      "notes": "",
+      "position": {
+        "lat": "26.394781465513677",
+        "lng": "29.183300965587993"
+      }
+    },
+    {
+      "id": "1947",
+      "cityName": "Ḑariyah",
+      "country": "Saudi Arabia",
+      "emoji": "🇸🇦",
+      "date": "2025-01-23T12:16:21.990Z",
+      "notes": "dsfsdf",
+      "position": {
+        "lat": "24.85089229762806",
+        "lng": "43.0341515614611"
+      }
     }
   ]
 }
