@@ -82,6 +82,7 @@ function CitiesProvider({ children }) {
 
   async function getCity(id) {
     dispatch({ type: "loading" });
+   if(Number(id) === currentCity.id) return;
     try {
       const response = await fetch(`${BASE_URL}/cities/${id}`);
       const data = await response.json();

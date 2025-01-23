@@ -1,42 +1,6 @@
 {
   "cities": [
     {
-      "id": "4b0e",
-      "cityName": "Quwaysina",
-      "country": "Egypt",
-      "emoji": "🇪🇬",
-      "date": "2025-01-23T09:18:20.996Z",
-      "notes": "",
-      "position": {
-        "lat": "30.552800413453546",
-        "lng": "31.168212890625004"
-      }
-    },
-    {
-      "id": "2126",
-      "cityName": "Cairo",
-      "country": "Egypt",
-      "emoji": "🇪🇬",
-      "date": "2025-01-23T12:15:55.485Z",
-      "notes": "fdsfsf",
-      "position": {
-        "lat": "29.937801557160792",
-        "lng": "31.359299236444713"
-      }
-    },
-    {
-      "id": "f994",
-      "cityName": "Markaz al Waḩat ad Dakhilah",
-      "country": "Egypt",
-      "emoji": "🇪🇬",
-      "date": "2025-01-23T12:16:17.125Z",
-      "notes": "",
-      "position": {
-        "lat": "26.394781465513677",
-        "lng": "29.183300965587993"
-      }
-    },
-    {
       "id": "1947",
       "cityName": "Ḑariyah",
       "country": "Saudi Arabia",
@@ -46,6 +10,162 @@
       "position": {
         "lat": "24.85089229762806",
         "lng": "43.0341515614611"
+      }
+    },
+    {
+      "id": "b9d0",
+      "cityName": "Mornag",
+      "country": "Tunisia",
+      "emoji": "🇹🇳",
+      "date": "2025-01-23T14:01:16.123Z",
+      "notes": "",
+      "position": {
+        "lat": "36.601480514404074",
+        "lng": "10.204162592188736"
+      }
+    },
+    {
+      "id": "0f29",
+      "cityName": "Madrid",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-01-23T14:03:08.153Z",
+      "notes": "",
+      "position": {
+        "lat": "40.36492705332554",
+        "lng": "-3.7749394606145064"
+      }
+    },
+    {
+      "id": "5ed1",
+      "cityName": "Hassi Messaoud",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2025-01-23T14:41:56.212Z",
+      "notes": "",
+      "position": {
+        "lat": "28.62053661974699",
+        "lng": "3.792668630010021"
+      }
+    },
+    {
+      "id": "c2f4",
+      "cityName": "Mumbwa",
+      "country": "Zambia",
+      "emoji": "🇿🇲",
+      "date": "2025-01-23T14:42:02.115Z",
+      "notes": "",
+      "position": {
+        "lat": "-14.512260895568774",
+        "lng": "26.732546868608626"
+      }
+    },
+    {
+      "id": "7d1b",
+      "cityName": "Cunhinga",
+      "country": "Angola",
+      "emoji": "🇦🇴",
+      "date": "2025-01-23T14:42:05.276Z",
+      "notes": "",
+      "position": {
+        "lat": "-12.036243575694398",
+        "lng": "16.96951853246886"
+      }
+    },
+    {
+      "id": "2d67",
+      "cityName": "El Battan",
+      "country": "Tunisia",
+      "emoji": "🇹🇳",
+      "date": "2025-01-23T16:43:39.156Z",
+      "notes": "",
+      "position": {
+        "lat": "36.8028042493592",
+        "lng": "9.86601069486724"
+      }
+    },
+    {
+      "id": "a5c6",
+      "cityName": "Toudgha El Oulia",
+      "country": "Morocco",
+      "emoji": "🇲🇦",
+      "date": "2025-01-23T16:43:53.404Z",
+      "notes": "",
+      "position": {
+        "lat": "31.58423087076687",
+        "lng": "-5.618391415876546"
+      }
+    },
+    {
+      "id": "a2b2",
+      "cityName": "Cairo",
+      "country": "Egypt",
+      "emoji": "🇪🇬",
+      "date": "2025-01-23T17:28:02.125Z",
+      "notes": "",
+      "position": {
+        "lat": "30.152821265849123",
+        "lng": "31.48258258106824"
+      }
+    },
+    {
+      "id": "4ccc",
+      "cityName": "Bani Walid",
+      "country": "Libya",
+      "emoji": "🇱🇾",
+      "date": "2025-01-23T18:47:01.462Z",
+      "notes": "",
+      "position": {
+        "lat": "32.2564183524916",
+        "lng": "13.550846806456878"
+      }
+    },
+    {
+      "id": "301f",
+      "cityName": "Ati",
+      "country": "Chad",
+      "emoji": "🇹🇩",
+      "date": "2025-01-23T18:47:15.485Z",
+      "notes": "",
+      "position": {
+        "lat": "14.961312854382323",
+        "lng": "18.663497972479696"
+      }
+    },
+    {
+      "id": "98db",
+      "cityName": "Goure",
+      "country": "Niger (the)",
+      "emoji": "🇳🇪",
+      "date": "2025-01-23T19:31:22.117Z",
+      "notes": "",
+      "position": {
+        "lat": "16.65253527578981",
+        "lng": "10.402629449676862"
+      }
+    },
+    {
+      "id": "47c9",
+      "cityName": "Bourem",
+      "country": "Mali",
+      "emoji": "🇲🇱",
+      "date": "2025-01-23T19:31:25.294Z",
+      "notes": "",
+      "position": {
+        "lat": "17.15741892757088",
+        "lng": "-1.2004016245728069"
+      }
+    },
+    {
+      "id": "7069",
+      "cityName": "Tichit",
+      "country": "Mauritania",
+      "emoji": "🇲🇷",
+      "date": "2025-01-23T19:31:28.916Z",
+      "notes": "",
+      "position": {
+        "lat": "17.827976627183308",
+        "lng": "-10.51580306061251"
       }
     }
   ]
