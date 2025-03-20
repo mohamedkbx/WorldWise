@@ -8,9 +8,7 @@ export default function Sidebar() {
     <div className={styles.sidebar}>
       <Logo />
       <AppNav />
-
       <Outlet />
-
       <Footer />
     </div>
   );
