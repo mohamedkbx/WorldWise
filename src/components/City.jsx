@@ -18,7 +18,6 @@ const formatDate = (date) =>
 
 function City() {
   const { id } = useParams();
-  // const[currentCity] = useCities().filter((city) => city.id === id);
   const { getCity, currentCity, isLoading } = useCities();
 
 
