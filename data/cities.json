@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "id": "1d23",
-      "cityName": "Quwaysina",
-      "country": "Egypt",
-      "emoji": "🇪🇬",
-      "date": "2025-03-18T04:11:44.803Z",
-      "notes": "",
-      "position": {
-        "lat": "30.539790669306914",
-        "lng": "31.146240234375004"
-      }
-    },
-    {
       "id": "cbbb",
       "cityName": "Minya",
       "country": "Egypt",
