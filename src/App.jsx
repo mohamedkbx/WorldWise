@@ -11,6 +11,7 @@ import City from "./components/City";
 import Form from "./components/Form";
 import { CitiesProvider } from "./context/CitiesProvider";
 import { AuthProvider } from "./context/FakeAuthContext";
+import ProtectedRoute from "./pages/ProtectedRoute";
 import { polyfillCountryFlagEmojis } from "country-flag-emoji-polyfill";
 polyfillCountryFlagEmojis();
 
@@ -27,7 +28,12 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="product" element={<Product />} />
         <Route path="pricing" element={<Pricing />} />
-        <Route path="app" element={<AppLayout />}>
+        <Route path="app" element={
+          <ProtectedRoute>
+
+          <AppLayout />
+          </ProtectedRoute>
+          }>
           <Route index element={<Navigate replace to="cities" />} />
           <Route path="cities" element={<CityList />} />
           <Route path="cities/:id" element={<City />} />
@@ -40,6 +46,7 @@ export default function App() {
       
     </BrowserRouter>
     </CitiesProvider>
+   
     </AuthProvider>
   );
 }
